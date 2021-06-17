@@ -1,0 +1,226 @@
+// 本文件两个功能：
+// 1. 建立 qtrade-dark theme
+// 2. 供 webpack less-loader 覆盖 antd 的 less 变量
+
+@import './dark.less';
+@import '../color/qtrade-dark.less';
+@import '../color/qtrade-dark-new.less';
+
+// 替换掉antd原有placeholder的mixin
+@import '../mixins/compatibility.less';
+
+@background: @background--base;
+@layout-aside-background: @card-background-base-1;
+@layout-footer-background: @card-background-base-1;
+@card-head-background: @card-background-base-2;
+@card-content-background: @card-background-base-1;
+
+// 全局样式
+@primary-color: @primary;
+@text-color: @primary-text-color;
+@disabled-color: @disabled-text-color;
+@disabled-bg: @white-5;
+@icon-color: @secondary-text-color;
+@border-color-split: @background--base;
+@shadow-color: @black-45;
+@heading-color: @text-base-color;
+@info-color: @action;
+@success-color: @success;
+@error-color: @q_red;
+@warning-color: @warning;
+@height-base: 28px;
+// @height-lg: 40px;
+@height-sm: 24px;
+@font-size-base: 12px;
+@font-size-lg: @font-size-base + 2px;
+@border-radius-base: 4px;
+@padding-primary-md: 9px;
+@padding-primary-lg: 16px;
+@border-color-base: @white-15;
+
+// button
+@btn-primary-color: @black;
+@btn-primary-bg: @primary-color;
+@btn-default-color: @secondary-text-color;
+@btn-default-bg: @transparent;
+@btn-default-border: @white-25;
+@btn-padding-horizontal-base: @padding-primary-lg - 4px;
+@btn-disable-color: @disabled-color;
+@btn-disable-bg: @disabled-bg;
+@btn-disable-border: @white-10;
+
+// link
+@link-color: @q_color_blue_a01;
+
+// drawer
+@drawer-bg: @card-background-base-2;
+@drawer-header-padding: @padding-primary-md @padding-primary-lg;
+@drawer-body-padding: @padding-primary-lg;
+@drawer-header-close-size: 40px;
+
+// popover
+@popover-min-width: 10px;
+@popover-min-height: 32px;
+@popover-arrow-width: 0px;
+@popover-bg: @card-background-base-3;
+@popover-color: @text-base-color;
+
+// Tooltip
+@tooltip-max-width: 200px;
+@tooltip-color: @black-85;
+@tooltip-bg: @tooltip-bg-color;
+@tooltip-arrow-width: 8px;
+@tooltip-distance: @tooltip-arrow-width - 2px;
+@tooltip-arrow-color: @tooltip-bg;
+
+@nav-item-bg: @card-background-base-1;
+@nav-item-color: @primary-text-color;
+@nav-fixed-color: @disabled-text-color;
+
+// select
+@select-background: @input-bg-color;
+@select-clear-background: @transparent;
+@select-border-color: @white-15;
+@select-dropdown-bg: @card-background-base-3;
+@select-item-active-bg: @white-5;
+@select-item-selected-bg: @white-5;
+@select-selection-item-bg: @white-15;
+@select-selection-item-border-color: @border-color-split;
+@activeColor: @link;
+@activeBgc: @white-5;
+
+// Tree
+@tree-bg: @transparent;
+@tree-node-hover-bg: @white-5;
+@tree-node-selected-bg: @white-5;
+@dropdown-menu-bg: @card-background-base-3;
+
+// Modal
+@modal-header-padding-vertical: @padding-primary-md;
+@modal-header-padding-horizontal: @padding-primary-lg;
+@modal-header-bg: @white-5;
+@modal-header-border-color-split: @black-85;
+@modal-heading-color: @prominent-text-color;
+@modal-header-title-font-size: @font-size-lg;
+@modal-header-close-size: 40px;
+@modal-close-color: @secondary-text-color;
+@modal-body-padding: @padding-primary-lg;
+@modal-content-bg: @card-background-base-2;
+@modal-footer-bg: @card-background-base-2;
+@modal-footer-border-color-split: @black-85;
+@modal-footer-padding-vertical: @padding-primary-md - 1px;
+@modal-footer-padding-horizontal: @padding-primary-lg;
+
+// Table
+@table-bg: @table-background-base;
+@table-header-bg: @table-background-header;
+@table-header-bg-sm: @table-background-header;
+@table-header-sort-bg: @table-background-prominent; // 权重低于@table-header-bg-sm
+@table-header-sort-active-bg: @table-background-prominent;
+@table-header-color: @text-secondary-color;
+@table-selected-row-color: inherit;
+@table-body-sort-bg: @table-background-prominent;
+@table-body-selected-sort-bg: @table-background-hover;
+@table-row-hover-bg: @table-background-hover;
+@table-selected-row-bg: @table-background-hover;
+@table-selected-row-hover-bg: @table-background-hover;
+@table-expanded-row-bg: @table-background-base;
+@table-expand-icon-bg: @text-secondary-color;
+@table-footer-bg: @table-background-base;
+@table-footer-color: @text-secondary-color;
+@table-padding-vertical-sm: 6.5px;
+@table-border-radius-base: 0;
+
+// Pagination
+@pagination-item-bg: @primary-color;
+@pagination-item-bg-active: @primary-color;
+@pagination-item-link-bg: @primary-color;
+@pagination-item-input-bg: @input-bg-color;
+@pagination-item-size-sm: 26px;
+@pagination-font-weight-active: 400;
+
+// Message
+@message-notice-content-padding: 6px 12px;
+@message-notice-content-bg: @card-background-base-3;
+
+// Radio
+@radio-size: 14px;
+@radio-dot-size: @radio-size - 8px;
+@radio-dot-color: @q_yellow;
+@radio-dot-disabled-color: fade(@text-base-color, 10%);
+@radio-solid-checked-color: @q_black;
+
+// Radio buttons
+@radio-button-bg: @q_color_bg_03;
+@radio-button-checked-bg: @q_yellow;
+@radio-button-color: @q_color_txt_primary;
+@radio-button-active-color: @q_color_yellow_03;
+@radio-button-hover-color: @q_color_yellow_02;
+@radio-disabled-button-checked-bg: @q_color_white_5;
+@radio-disabled-button-checked-color: @q_color_txt_disable;
+
+// TimePicker
+@picker-bg: @input-bg-color;
+@picker-basic-cell-hover-color: @primary-darken;
+@picker-border-color: @q_color_black_85;
+@picker-panel-cell-height: 24px;
+@picker-panel-cell-width: 32px;
+@picker-text-height: 40px;
+@picker-basic-cell-disabled-bg: @white-5;
+
+// Calendar
+@calendar-bg: @card-background-base-3;
+
+// Input
+@input-padding-horizontal: @padding-primary-md - 1px;
+@input-padding-horizontal-base: @input-padding-horizontal;
+@input-placeholder-color: @third-text-color;
+@input-color: @text-color;
+@input-border-color: @white-15;
+@input-bg: @input-bg-color;
+@input-disabled-bg: @disabled-bg;
+@input-disabled-color: @disabled-color;
+@input-number-handler-active-bg: @input-bg;
+@input-number-handler-hover-bg: @input-bg;
+@input-number-handler-bg: @white-20;
+@input-number-handler-border-color: @input-bg;
+@input-addon-bg: @input-bg;
+
+// Tab
+@tabs-card-height: 36px;
+@tabs-horizontal-margin: 0 12px 0 0;
+// Checkbox
+@checkbox-size: @font-size-base;
+@checkbox-check-bg: @transparent;
+@checkbox-color: @q_yellow;
+@checkbox-check-color: @q_black;
+
+// tabs
+@tabs-card-head-background: @card-background-base-2;
+@tabs-card-height: 24px;
+@tabs-card-active-color: @black;
+@tabs-bar-margin: 0 0 8px 0;
+
+// slider
+@slider-rail-background-color: @white-10;
+@slider-rail-background-color-hover: @white-10;
+@slider-track-background-color: @action;
+@slider-track-background-color-hover: @action;
+@slider-handle-color: @action;
+@slider-handle-color-hover: @action;
+@slider-handle-color-focus: @action;
+@slider-handle-color-focus-shadow: fade(@action, 12%);
+@slider-handle-color-tooltip-open: @action;
+
+// input-number
+@input-number-handler-bg: @transparent;
+@input-number-handler-border-color: fade(@white, 20%);
+@input-number-handler-hover-bg: @primary;
+
+// Form
+@label-color: @text-secondary-color;
+
+// Notification
+@notification-bg: @q_color_bg_03;
+@notification-padding: 20px;
+@notification-width: 350px;

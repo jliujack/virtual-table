@@ -1,0 +1,35 @@
+.mixin-checkbox(@className) {
+  // 文字
+  + span {
+    color: @q_color_txt_primary;
+  }
+
+  .@{className}-inner {
+    border-radius: 2px;
+    border-color: @q_color_txt_primary_shallow;
+  }
+
+  // 选中状态边框颜色
+  &.@{className}-checked {
+    .@{className}-inner {
+      border-color: @q_yellow;
+
+      &::after {
+        border-right-width: 1.2px;
+        border-bottom-width: 1.2px;
+      }
+    }
+  }
+
+  // 禁用状态
+  &.@{className}-disabled {
+    .@{className}-inner {
+      border-color: @q_color_white_25 !important;
+      background-color: @q_color_white_15;
+
+      &::after {
+        border-color: @q_color_txt_primary_more_shallow;
+      }
+    }
+  }
+}

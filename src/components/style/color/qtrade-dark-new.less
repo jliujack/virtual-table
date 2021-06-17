@@ -1,0 +1,112 @@
+/**
+ * 本文档与设计师颜色对照表 https://docs.qq.com/sheet/DREFMTG54bE9zSEFa?tab=BB08J2 同步修改，包括变量名、值都完全一致
+ * 禁止出现设计师之外的变量
+*/
+
+// 深色界面 - 色值
+@q_brand: rgba(255, 165, 38, 1);
+@q_black: rgba(0, 0, 0, 1);
+@q_white: rgba(255, 255, 255, 1);
+@q_text: rgba(247, 225, 175, 1);
+@q_text_secondary: rgba(255, 246, 217, 1);
+@q_blue_a: rgba(94, 159, 216, 1);
+@q_blue_b: rgba(39, 135, 232, 1);
+@q_red: rgba(217, 64, 82, 1);
+@q_yellow: rgba(255, 165, 38, 1);
+@q_green: rgba(54, 191, 110, 1);
+
+// Background  背景色
+@q_color_bg_base: rgba(16, 18, 26, 1);
+@q_color_bg_01: rgba(24, 28, 38, 1);
+@q_color_bg_02: rgba(35, 39, 49, 1);
+@q_color_bg_03: rgba(47, 51, 60, 1);
+@q_color_bg_04: rgba(38, 45, 59, 1);
+@q_color_bg_05: rgba(35, 59, 49, 1);
+
+// Line  分割线
+@q_color_line_01: fade(@q_white, 5%);
+@q_color_line_02: fade(@q_white, 10%);
+@q_color_line_03: fade(@q_white, 15%);
+@q_color_line_04: fade(@q_black, 30%);
+@q_color_line_05: fade(@q_black, 85%);
+
+// Special  用于文本、图标填充
+@q_color_txt_prominent: fade(@q_white, 100%);
+@q_color_txt_primary: fade(@q_text, 87%);
+@q_color_txt_primary_shallow: fade(@q_text, 50%);
+@q_color_txt_primary_more_shallow: fade(@q_text, 30%);
+@q_color_txt_secondary: fade(@q_text_secondary, 65%);
+@q_color_txt_cream: fade(@q_text, 100%);
+
+@q_color_txt_tertiary: fade(@q_text, 50%);
+@q_color_txt_disable: fade(@q_text, 30%);
+@q_color_txt_black: fade(@q_black, 100%);
+@q_color_txt_yellow: fade(@q_yellow, 100%);
+
+// Table  用于表格样式
+@q_color_table_thead01: #232731;
+@q_color_table_thead02: #1f232c;
+@q_color_table_bg: #181c26;
+@q_color_table_zebra: #141720;
+@q_color_table_selected: #3a3d46;
+@q_color_table_hover: #2a2d37;
+@q_color_table_line: fade(@q_black, 30%);
+@q_color_table_highlight: #332a23;
+@q_color_table_red: #23161f;
+@q_color_table_green: #142422;
+@q_color_table_screen: rgba(107, 157, 230, 0.05);
+@q_color_table_yellow: fade(@q_color_yellow_02, 4%);
+@q_color_table_blue: fade(@q_color_blue_a01, 4%);
+@q_color_table_grey: rgba(67, 71, 79, 1);
+
+// Blue A 蓝色
+@q_color_blue_a01: rgba(69, 152, 227, 1);
+@q_color_blue_a02: rgba(89, 168, 231, 1);
+@q_color_blue_a03: rgba(62, 139, 214, 1);
+
+@q_color_blue_b01: rgba(39, 135, 232, 1);
+
+// Red 红色
+@q_color_red_01: rgba(217, 64, 82, 1);
+@q_color_red_02: rgba(224, 81, 104, 1);
+@q_color_red_03: rgba(201, 59, 80, 1);
+
+// Yellow 黄色
+@q_color_yellow_01: rgba(255, 165, 38, 1);
+@q_color_yellow_02: rgba(255, 181, 77, 1);
+@q_color_yellow_03: rgba(255, 149, 1, 1);
+@q_color_yellow_04: rgba(255, 165, 38, 1);
+@q_color_yellow_05: fade(@q_text, 87%);
+@q_color_yellow_06: fade(@q_text, 65%);
+@q_color_yellow_07: fade(@q_text, 5%);
+
+// Green 绿色
+@q_color_green_01: rgba(54, 191, 110, 1);
+
+// Black 黑色
+@q_color_black_1: fade(@q_black, 1%);
+@q_color_black_5: fade(@q_black, 5%);
+@q_color_black_10: fade(@q_black, 10%);
+@q_color_black_15: fade(@q_black, 15%);
+@q_color_black_20: fade(@q_black, 20%);
+@q_color_black_25: fade(@q_black, 25%);
+@q_color_black_30: fade(@q_black, 30%);
+@q_color_black_45: fade(@q_black, 45%);
+@q_color_black_65: fade(@q_black, 65%);
+@q_color_black_85: fade(@q_black, 85%);
+@q_color_black_100: fade(@q_black, 100%);
+
+// White 白色
+@q_color_white_5: fade(@q_white, 5%);
+@q_color_white_10: fade(@q_white, 10%);
+@q_color_white_15: fade(@q_white, 15%);
+@q_color_white_20: fade(@q_white, 20%);
+@q_color_white_25: fade(@q_white, 25%);
+@q_color_white_30: fade(@q_white, 30%);
+@q_color_white_45: fade(@q_white, 45%);
+@q_color_white_65: fade(@q_white, 65%);
+@q_color_white_85: fade(@q_white, 85%);
+@q_color_white_100: fade(@q_white, 100%);
+
+// Tag 标签
+@q_tag_gray: fade(@q_white, 15%);
