@@ -1,0 +1,20 @@
+/node_modules/
+/src/_util/
+/es/
+/lib/
+/less/
+/src/index.ts
+
+# test about
+coverage
+
+# 旧代码迁移 antd源码不处理
+/components/Button/
+/components/LocaleProvider/
+/components/message/
+/components/Modal/
+/components/Notification/
+/components/Tooltip/
+/components/locale/
+/components/_util/
+/components/TableNext/

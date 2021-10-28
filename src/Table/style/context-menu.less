@@ -1,0 +1,100 @@
+@font-dark-color: rgba(247, 225, 175, 0.87);
+.QtradeTableContextMenu {
+  position: fixed;
+  z-index: 999;
+  box-sizing: border-box;
+  min-width: 100px;
+  padding: 0;
+  background-color: #2f333c;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  user-select: none;
+  .ant-spin-spinning {
+    padding: 11px;
+  }
+
+  & &__submenu {
+    position: absolute;
+    top: 0;
+    transition: opacity 0.275s;
+    pointer-events: none;
+  }
+
+  &__submenu-arrow {
+    position: absolute;
+    right: 10px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  &__separator {
+    float: left;
+    width: 100%;
+    height: 1px;
+    margin: 4px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: default;
+  }
+
+  &__item {
+    position: relative;
+    cursor: pointer;
+
+    &:first-child {
+      margin-top: 5px;
+    }
+
+    &:last-child {
+      margin-bottom: 5px;
+    }
+
+    &:not(&--disabled):hover > &__content {
+      color: rgba(0, 0, 0, 0.85);
+      background-color: #e6f7ff;
+    }
+
+    &:not(&--disabled):hover > .react-contexify__submenu {
+      opacity: 1;
+      pointer-events: initial;
+    }
+
+    &--disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+    &__content {
+      position: relative;
+      display: flex;
+      height: 30px;
+      padding: 6px 12px;
+      color: #333;
+      white-space: nowrap;
+      text-align: left;
+    }
+    &__icon {
+      margin-right: 5px;
+      font-size: 20px;
+      font-style: normal;
+    }
+  }
+}
+
+// 暗黑模式下右键菜单的样式
+.QtradeTableContextMenu__theme--dark {
+  z-index: 1001;
+  background-color: @row-selected-background-dark-color;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  .QtradeTableContextMenu__item:not(.QtradeTableContextMenu__item--disabled):hover
+    > .QtradeTableContextMenu__item__content {
+    color: @font-dark-color;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .QtradeTableContextMenu__item {
+    &__content {
+      color: @font-dark-color;
+    }
+  }
+}

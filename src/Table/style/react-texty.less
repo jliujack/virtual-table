@@ -1,0 +1,68 @@
+[data-texty] {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+[data-texty-tooltip] {
+  // margin: 6px 0;
+  // padding: 4px 10px;
+  // border-radius: 4px;
+  // background-color: #fffbe6;
+  // color: #000;
+  z-index: 99999;
+  min-width: 30px;
+  min-height: 18px;
+  padding: 6px 8px;
+  color: rgba(247, 225, 175, 1);
+  text-align: left;
+  text-decoration: none;
+  word-wrap: break-word;
+  background-color: rgba(47, 51, 60, 1);
+  border-radius: 4px;
+  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 48%), 0 6px 16px 0 rgb(0 0 0 / 32%),
+    0 9px 28px 8px rgb(0 0 0 / 20%);
+}
+
+// [data-texty-arrow] {
+//   position: absolute;
+//   bottom: -6px;
+//   width: 0;
+//   height: 0;
+//   border-style: solid;
+//   border-width: 6px 6px 0;
+//   border-color: #fffbe6 transparent transparent;
+// }
+
+// [data-texty-arrow*='bottom'] {
+//   top: -6px;
+//   bottom: inherit;
+//   transform: rotate(180deg);
+// }
+
+/* disable the builtin tooltip for truncated text on Safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @supports (not (-ms-ime-align: auto)) {
+    .EllipsisText::before {
+      display: block;
+      width: 0;
+      height: 0;
+      content: '';
+    }
+  }
+}
+
+// 通过传入 classprefix 到 TableCell，暗黑模式下给 texty 一个classname
+.tooltip-dark {
+  max-width: 320px;
+  color: @q_color_txt_secondary;
+  background-color: @q_color_bg_03;
+  border-radius: 4px;
+  box-shadow: 0 12px 48px 16px @q_color_black_10, 0 9px 28px 0 @q_color_black_20,
+    0 6px 16px -8px @q_color_black_30;
+
+  [data-texty-arrow] {
+    border-color: @q_color_bg_03 transparent transparent;
+  }
+}

@@ -1,0 +1,112 @@
+@import './index';
+@import './size';
+
+@table-border: @border-width-base @border-style-base @q_color_black_45;
+
+.@{table-prefix-cls}.@{table-prefix-cls}-bordered {
+  // ============================ Title =============================
+  > .@{table-prefix-cls}-title {
+    border: @table-border;
+    border-bottom: 0;
+  }
+
+  > .@{table-prefix-cls}-container {
+    border-right: @table-border;
+    border-bottom: @table-border;
+    // ============================ Content ============================
+    border-left: @table-border;
+
+    > .@{table-prefix-cls}-content,
+    > .@{table-prefix-cls}-header,
+    > .@{table-prefix-cls}-tbody,
+    > .@{table-prefix-cls}-summary {
+      // ============================= Cell =============================
+      .@{table-prefix-cls}-cell {
+        border-right: @table-border;
+      }
+      // ============================ Header ============================
+      .@{table-prefix-cls}-header-row:not(:last-child) {
+        .@{table-prefix-cls}-cell {
+          border-bottom: @table-border;
+        }
+      }
+
+      .@{table-prefix-cls}-header-row:first-child {
+        .@{table-prefix-cls}-cell {
+          border-top: @table-border;
+        }
+      }
+
+      .@{table-prefix-cls}-header-row {
+        > .@{table-prefix-cls}-cell {
+          &::before {
+            background-color: transparent !important;
+          }
+        }
+      }
+
+      // Fixed right should provides additional border
+      .@{table-prefix-cls}-cell-fix-right-first::after {
+        border-right: @table-border;
+      }
+    }
+  }
+
+  &.@{table-prefix-cls}-scroll-horizontal {
+    > .@{table-prefix-cls}-container > .@{table-prefix-cls}-tbody {
+      > table > tbody {
+        > tr.@{table-prefix-cls}-expanded-row,
+        > tr.@{table-prefix-cls}-placeholder {
+          > td {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // Size related
+  &.@{table-prefix-cls}-middle {
+    > .@{table-prefix-cls}-container {
+      > .@{table-prefix-cls}-content,
+      > .@{table-prefix-cls}-tbody {
+        > table > tbody > tr > td {
+          > .@{table-prefix-cls}-expanded-row-fixed {
+            margin: -@table-padding-vertical-md (-@table-padding-horizontal-md - @border-width-base);
+          }
+        }
+      }
+    }
+  }
+
+  &.@{table-prefix-cls}-small {
+    > .@{table-prefix-cls}-container {
+      > .@{table-prefix-cls}-content,
+      > .@{table-prefix-cls}-tbody {
+        > table > tbody > tr > td {
+          > .@{table-prefix-cls}-expanded-row-fixed {
+            margin: -@table-padding-vertical-sm (-@table-padding-horizontal-sm - @border-width-base);
+          }
+        }
+      }
+    }
+  }
+
+  // ============================ Footer ============================
+  > .@{table-prefix-cls}-footer {
+    border: @table-border;
+    border-top: 0;
+  }
+}
+
+.@{table-prefix-cls}-cell {
+  // ============================ Nested ============================
+  .@{table-prefix-cls}-container:first-child {
+    // :first-child to avoid the case when bordered and title is set
+    border-top: 0;
+  }
+
+  &-scrollbar {
+    box-shadow: 0 @border-width-base 0 @border-width-base @table-header-bg;
+  }
+}

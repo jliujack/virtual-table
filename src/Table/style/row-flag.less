@@ -1,0 +1,300 @@
+// 业务侧加的 row style
+
+@table-prefix: QT-table;
+
+.@{table-prefix} {
+  &-tbody {
+    .@{table-prefix} {
+      @background-color: @dark-bg-color;
+      @row-new-background-color: @dark-new-bg-color;
+
+      @red: #ef5a55;
+      @orange: #ff5500;
+      @gray: #4a4b63;
+      @aqua: #64b9fa;
+      @blue: #4d7dff;
+      @green: #00ce93;
+      @yellow: #ff9600;
+      @purple: #706cf5;
+      @steelblue: #718db4;
+      &__row {
+        &--disabled {
+          background-color: @background-color;
+          .@{table-prefix}-cell:not(.@{table-prefix}__row-cell--with-ignore-disable) {
+            color: @dark-disable-font-color !important;
+            filter: grayscale(80%);
+            pointer-events: none;
+            * {
+              color: @dark-disable-font-color !important;
+            }
+          }
+        }
+        &--disabled:hover {
+          background-color: @background-color;
+        }
+
+        &--group-chat {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: #4d7dff;
+              content: '群聊';
+            }
+          }
+        }
+
+        &--new {
+          background-color: @row-new-background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: #ef5a55;
+              content: 'NEW';
+            }
+          }
+        }
+        &--new:hover {
+          background-color: @row-new-background-color;
+        }
+
+        &--error {
+          background-color: @q_color_table_red;
+        }
+
+        &--highlight,
+        &--highlight:hover {
+          background-color: @row-new-background-color;
+        }
+
+        &--win-bid {
+          background-color: @row-selected-background-dark-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #000;
+              background-color: #0bc464;
+              content: '中标';
+            }
+          }
+        }
+        &--win-bid:hover {
+          background-color: @row-selected-background-dark-color;
+        }
+
+        &--stop-bid {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: #ff5b00;
+              content: '已截标';
+            }
+          }
+          .@{table-prefix}__row-cell:not(.@{table-prefix}__row-cell--with-ignore-stop-bid) {
+            color: @dark-disable-font-color;
+            // filter: grayscale(80%);
+            pointer-events: none;
+            * {
+              color: @dark-disable-font-color;
+            }
+          }
+        }
+        &--stop-bid:hover {
+          background-color: @background-color;
+        }
+
+        &--ref {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: #718db4;
+              content: 'REF';
+            }
+          }
+          .@{table-prefix}__row-cell:not(.@{table-prefix}__row-cell--with-ignore-ref) {
+            color: @dark-disable-font-color;
+            // filter: grayscale(80%);
+            pointer-events: none;
+            * {
+              color: @dark-disable-font-color;
+            }
+          }
+        }
+        &--ref:hover {
+          background-color: @background-color;
+        }
+
+        &--complete {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #000;
+              background-color: #0bc464;
+              content: '完成';
+            }
+          }
+        }
+
+        &--complete:hover {
+          background-color: @background-color;
+        }
+
+        &--tip {
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #000;
+              background-color: #ff4545;
+              content: '提醒';
+            }
+          }
+        }
+
+        &--topped,
+        &--topped:hover {
+          background-color: @row-selected-background-dark-color;
+        }
+
+        &--delay-issue {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: @yellow;
+              transform: scale(0.92);
+              content: '推迟发行';
+            }
+          }
+        }
+        &--delay-issue:hover {
+          background-color: @background-color;
+        }
+
+        &--cancel-issue {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: @gray;
+              transform: scale(0.92);
+              content: '取消发行';
+            }
+          }
+        }
+        &--cancel-issue:hover {
+          background-color: @background-color;
+        }
+
+        &--issue-fail {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: @gray;
+              transform: scale(0.92);
+              content: '发行失败';
+            }
+          }
+        }
+        &--issue-fail:hover {
+          background-color: @background-color;
+        }
+
+        &--had-ipo {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: @aqua;
+              transform: scale(0.92);
+              content: '已上市';
+            }
+          }
+        }
+        &--had-ipo:hover {
+          background-color: @background-color;
+        }
+
+        &--had-allocation {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: @green;
+              transform: scale(0.92);
+              content: '已分配';
+            }
+          }
+        }
+        &--had-allocation:hover {
+          background-color: @background-color;
+        }
+
+        &--wait-allocation {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: @blue;
+              transform: scale(0.92);
+              content: '等待分配';
+            }
+          }
+        }
+        &--wait-allocation:hover {
+          background-color: @background-color;
+        }
+
+        &--modify {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: @yellow;
+              transform: scale(0.92);
+              content: '改';
+            }
+          }
+        }
+        &--modify:hover {
+          background-color: @background-color;
+        }
+
+        &--withdraw {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: @gray;
+              transform: scale(0.92);
+              content: '撤';
+            }
+          }
+        }
+        &--withdraw:hover {
+          background-color: @background-color;
+        }
+
+        &--reject {
+          background-color: @background-color;
+          .@{table-prefix}__row-cell--with-flag {
+            &::before {
+              color: #fff;
+              background-color: @orange;
+              transform: scale(0.92);
+              content: '退';
+            }
+          }
+        }
+        &--reject:hover {
+          background-color: @background-color;
+        }
+
+        // 选中的样式最高优先级
+        &--selected {
+          background-color: @row-selected-background-dark-color !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table.bordered renders border correctly 1`] = `
+<div
+  class="QT-table QT-table-bordered"
+>
+  <div
+    class="QT-table-container"
+  >
+    <div
+      class="QT-table-header"
+      style="overflow:hidden;width:400px"
+    >
+      <div>
+        <div
+          class="QT-table-thead"
+          style="width:400px;height:36px"
+        >
+          <div
+            class="QT-table-header-row"
+            style="height:36px"
+          >
+            <div
+              class="QT-table-cell"
+              style="position:absolute;left:0;width:400px;height:36px"
+              title="Name"
+            >
+              Name
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bordered-spec QT-table-tbody"
+      style="position:relative;height:364px;width:400px;overflow:auto;-webkit-overflow-scrolling:touch;will-change:unset;direction:ltr;overflow-x:hidden;overflow-y:hidden"
+    >
+      <div
+        style="height:128px;width:400px"
+      >
+        <div
+          class="QT-table-row-wrapper"
+          style="position:absolute;left:0;top:0;height:32px;width:400px"
+        >
+          <div
+            class="QT-table-row QT-table-row-level-0"
+            data-row-key="0"
+            style="height:32px"
+          >
+            <div
+              class="QT-table-cell QT-table__row-cell--with-flag"
+              style="position:absolute;left:0;width:400px;height:32px"
+              title=""
+            >
+              Jack
+            </div>
+          </div>
+        </div>
+        <div
+          class="QT-table-row-wrapper"
+          style="position:absolute;left:0;top:32px;height:32px;width:400px"
+        >
+          <div
+            class="QT-table-row QT-table-row-level-0 QT-table-row--interval"
+            data-row-key="1"
+            style="height:32px"
+          >
+            <div
+              class="QT-table-cell QT-table__row-cell--with-flag"
+              style="position:absolute;left:0;width:400px;height:32px"
+              title=""
+            >
+              Lucy
+            </div>
+          </div>
+        </div>
+        <div
+          class="QT-table-row-wrapper"
+          style="position:absolute;left:0;top:64px;height:32px;width:400px"
+        >
+          <div
+            class="QT-table-row QT-table-row-level-0"
+            data-row-key="2"
+            style="height:32px"
+          >
+            <div
+              class="QT-table-cell QT-table__row-cell--with-flag"
+              style="position:absolute;left:0;width:400px;height:32px"
+              title=""
+            >
+              Tom
+            </div>
+          </div>
+        </div>
+        <div
+          class="QT-table-row-wrapper"
+          style="position:absolute;left:0;top:96px;height:32px;width:400px"
+        >
+          <div
+            class="QT-table-row QT-table-row-level-0 QT-table-row--interval"
+            data-row-key="3"
+            style="height:32px"
+          >
+            <div
+              class="QT-table-cell QT-table__row-cell--with-flag"
+              style="position:absolute;left:0;width:400px;height:32px"
+              title=""
+            >
+              Jerry
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

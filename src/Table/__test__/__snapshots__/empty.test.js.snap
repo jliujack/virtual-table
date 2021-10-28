@@ -1,0 +1,496 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table renders empty table 1`] = `
+<div
+  class="QT-table-wrapper"
+>
+  <div
+    class="ant-spin-nested-loading"
+  >
+    <div
+      class="ant-spin-container"
+    >
+      <div
+        class="QT-table QT-table-bordered QT-table-empty QT-table-scroll-horizontal"
+      >
+        <div
+          class="QT-table-container"
+        >
+          <div
+            class="QT-table-header"
+            style="overflow:hidden;width:400px"
+          >
+            <div>
+              <div
+                class="QT-table-thead"
+                style="width:800px;height:36px"
+              >
+                <div
+                  class="QT-table-header-row"
+                  style="height:36px"
+                >
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:0;width:100px;height:36px"
+                    title="Column 1"
+                  >
+                    Column 1
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:100px;width:100px;height:36px"
+                    title="Column 2"
+                  >
+                    Column 2
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:200px;width:100px;height:36px"
+                    title="Column 3"
+                  >
+                    Column 3
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:300px;width:100px;height:36px"
+                    title="Column 4"
+                  >
+                    Column 4
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:400px;width:100px;height:36px"
+                    title="Column 5"
+                  >
+                    Column 5
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:500px;width:100px;height:36px"
+                    title="Column 6"
+                  >
+                    Column 6
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:600px;width:100px;height:36px"
+                    title="Column 7"
+                  >
+                    Column 7
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:700px;width:100px;height:36px"
+                    title="Column 8"
+                  >
+                    Column 8
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ant-empty QT-table-empty"
+          >
+            <div
+              class="ant-empty-image"
+            >
+              <img
+                alt="暂无数据"
+                src="empty-dark.png"
+              />
+            </div>
+            <div
+              class="ant-empty-description"
+            >
+              暂无数据
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table renders empty table with custom emptyText 1`] = `
+<div
+  class="QT-table-wrapper"
+>
+  <div
+    class="ant-spin-nested-loading"
+  >
+    <div
+      class="ant-spin-container"
+    >
+      <div
+        class="QT-table QT-table-bordered QT-table-empty QT-table-scroll-horizontal"
+      >
+        <div
+          class="QT-table-container"
+        >
+          <div
+            class="QT-table-header"
+            style="overflow:hidden;width:400px"
+          >
+            <div>
+              <div
+                class="QT-table-thead"
+                style="width:800px;height:36px"
+              >
+                <div
+                  class="QT-table-header-row"
+                  style="height:36px"
+                >
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:0;width:100px;height:36px"
+                    title="Column 1"
+                  >
+                    Column 1
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:100px;width:100px;height:36px"
+                    title="Column 2"
+                  >
+                    Column 2
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:200px;width:100px;height:36px"
+                    title="Column 3"
+                  >
+                    Column 3
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:300px;width:100px;height:36px"
+                    title="Column 4"
+                  >
+                    Column 4
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:400px;width:100px;height:36px"
+                    title="Column 5"
+                  >
+                    Column 5
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:500px;width:100px;height:36px"
+                    title="Column 6"
+                  >
+                    Column 6
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:600px;width:100px;height:36px"
+                    title="Column 7"
+                  >
+                    Column 7
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:700px;width:100px;height:36px"
+                    title="Column 8"
+                  >
+                    Column 8
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ant-empty QT-table-empty"
+          >
+            <div
+              class="ant-empty-image"
+            >
+              <img
+                alt="暂无数据"
+                src="empty-dark.png"
+              />
+            </div>
+            <div
+              class="ant-empty-description"
+            >
+              暂无数据
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table renders empty table with fixed columns 1`] = `
+<div
+  class="QT-table-wrapper"
+>
+  <div
+    class="ant-spin-nested-loading"
+  >
+    <div
+      class="ant-spin-container"
+    >
+      <div
+        class="QT-table QT-table-bordered QT-table-empty QT-table-fixed-column QT-table-scroll-horizontal QT-table-has-fix-left QT-table-has-fix-right"
+      >
+        <div
+          class="QT-table-container"
+        >
+          <div
+            class="QT-table-header"
+            style="overflow:hidden;width:400px"
+          >
+            <div>
+              <div
+                class="QT-table-thead"
+                style="width:1100px;height:36px"
+              >
+                <div
+                  class="QT-table-header-row"
+                  style="height:36px"
+                >
+                  <div
+                    class="QT-table-cell QT-table-cell-fix-left"
+                    style="position:absolute;left:0;z-index:10;width:100px;height:36px"
+                    title="Full Name"
+                  >
+                    Full Name
+                  </div>
+                  <div
+                    class="QT-table-cell QT-table-cell-fix-left QT-table-cell-fix-left-last"
+                    style="position:absolute;left:100px;z-index:10;width:100px;height:36px"
+                    title="Age"
+                  >
+                    Age
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:200px;width:100px;height:36px"
+                    title="Column 1"
+                  >
+                    Column 1
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:300px;width:100px;height:36px"
+                    title="Column 2"
+                  >
+                    Column 2
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:400px;width:100px;height:36px"
+                    title="Column 3"
+                  >
+                    Column 3
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:500px;width:100px;height:36px"
+                    title="Column 4"
+                  >
+                    Column 4
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:600px;width:100px;height:36px"
+                    title="Column 5"
+                  >
+                    Column 5
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:700px;width:100px;height:36px"
+                    title="Column 6"
+                  >
+                    Column 6
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:800px;width:100px;height:36px"
+                    title="Column 7"
+                  >
+                    Column 7
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:900px;width:100px;height:36px"
+                    title="Column 8"
+                  >
+                    Column 8
+                  </div>
+                  <div
+                    class="QT-table-cell QT-table-cell-fix-right QT-table-cell-fix-right-first"
+                    style="position:absolute;left:300px;z-index:10;width:100px;height:36px"
+                    title="Action"
+                  >
+                    Action
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ant-empty QT-table-empty"
+          >
+            <div
+              class="ant-empty-image"
+            >
+              <img
+                alt="暂无数据"
+                src="empty-dark.png"
+              />
+            </div>
+            <div
+              class="ant-empty-description"
+            >
+              暂无数据
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table renders empty table without emptyText when loading 1`] = `
+<div
+  class="QT-table-wrapper"
+>
+  <div
+    class="ant-spin-nested-loading"
+  >
+    <div>
+      <div
+        class="ant-spin ant-spin-spinning"
+      >
+        <span
+          class="ant-spin-dot ant-spin-dot-spin"
+        >
+          <i
+            class="ant-spin-dot-item"
+          />
+          <i
+            class="ant-spin-dot-item"
+          />
+          <i
+            class="ant-spin-dot-item"
+          />
+          <i
+            class="ant-spin-dot-item"
+          />
+        </span>
+      </div>
+    </div>
+    <div
+      class="ant-spin-container ant-spin-blur"
+    >
+      <div
+        class="QT-table QT-table-bordered QT-table-empty QT-table-scroll-horizontal"
+      >
+        <div
+          class="QT-table-container"
+        >
+          <div
+            class="QT-table-header"
+            style="overflow:hidden;width:400px"
+          >
+            <div>
+              <div
+                class="QT-table-thead"
+                style="width:800px;height:36px"
+              >
+                <div
+                  class="QT-table-header-row"
+                  style="height:36px"
+                >
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:0;width:100px;height:36px"
+                    title="Column 1"
+                  >
+                    Column 1
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:100px;width:100px;height:36px"
+                    title="Column 2"
+                  >
+                    Column 2
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:200px;width:100px;height:36px"
+                    title="Column 3"
+                  >
+                    Column 3
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:300px;width:100px;height:36px"
+                    title="Column 4"
+                  >
+                    Column 4
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:400px;width:100px;height:36px"
+                    title="Column 5"
+                  >
+                    Column 5
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:500px;width:100px;height:36px"
+                    title="Column 6"
+                  >
+                    Column 6
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:600px;width:100px;height:36px"
+                    title="Column 7"
+                  >
+                    Column 7
+                  </div>
+                  <div
+                    class="QT-table-cell"
+                    style="position:absolute;left:700px;width:100px;height:36px"
+                    title="Column 8"
+                  >
+                    Column 8
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ant-empty QT-table-empty"
+          >
+            <div
+              class="ant-empty-image"
+            >
+              <img
+                alt="暂无数据"
+                src="empty-dark.png"
+              />
+            </div>
+            <div
+              class="ant-empty-description"
+            >
+              暂无数据
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
